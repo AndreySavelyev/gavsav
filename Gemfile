@@ -1,10 +1,19 @@
-source 'http://gemcutter.org'
+# for BDD
+source 'http://rubygems.org'
+gem 'capybara'
+gem 'database_cleaner'
+gem 'cucumber-rails'
+gem 'cucumber'
+gem 'rspec-rails'
+gem 'spork'
+gem 'launchy'
 
-#gem 'rails', '3.0.0.rc2'
+# for Authorization
+source 'http://gemcutter.org'
+gem 'devise', '1.1.3'
 
 # Bundle edge Rails instead:
- gem 'rails'
-
+gem 'rails'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
 # Use unicorn as the web server
@@ -28,4 +37,3 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 #   gem 'webrat'
 # end
 
-  gem 'devise', '1.1.3'
