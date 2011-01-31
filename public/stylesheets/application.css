@@ -1,0 +1,42 @@
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+form fieldset
+{
+    margin: 0 0 15px 0;
+    border: 0;
+}
+
+form fieldset textarea,
+form fieldset input
+{
+    width: 50%;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+form fieldset label
+{
+    display: block;
+    margin: 0 0 3px 0;
+    font-weight: bold;
+}
+
+.button a
+{
+    padding: 5px 14px;
+    color: black;
+    border: 1px solid #47dbde;
+    background: #47dbde url("/images/bg_button.png") repeat-x 0 50%;
+}
+
+.button a:hover
+{
+    background-color: #006fa1;
+    border-color: #006fa1;
+    color: #fff;
+}
+

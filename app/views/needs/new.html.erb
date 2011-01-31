@@ -1,10 +1,16 @@
 <% title = "New need" %>
 <br />
 <% form_for @need do |f| %>
-	<%= f.label :title, "Title" %><br />
-	<%= f.text_field :title %><br />
-	<br />
-	<%= f.label :contents, "Content" %><br />
-	<%= f.text_area :contents %><br />
-	<%= f.submit "Create" %>
+  <fieldset>
+    <%= f.label :title, "Title" %>
+    <%= f.text_field :title %>
+  </fieldset>
+  <fieldset>
+  	<%= f.label :contents, "Content" %>
+  	<%= f.text_area :contents %>
+  </fieldset>
+	<div class="button">
+	  <%= link_to 'Create', nil, :class => 'submit_button rc6'  %>
+	</div>
 <% end %>
+
