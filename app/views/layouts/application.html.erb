@@ -9,7 +9,8 @@
 </head>
 <body>
 
-	<div id="user_div">
+<div class="header">
+  <div id="user_navigation">
 		<% if user_signed_in? %>
 			Signed in as <%= current_user.email %>
 			<%= link_to "Sugn out", destroy_user_session_path %>
@@ -18,7 +19,20 @@
 		<% end %>
 	</div>
 
-<%= yield %>
+  <ul class="site_navigation">
+    <li><%= link_to t("site_navigation.needs"), needs_path, :class => "rc6" %></li>
+
+    <div class="clear"></div>
+  </ul>
+</div>
+
+<div class="main">
+  <%= yield %>
+</div>
+
+<div class="footer">
+  ©GavSav Group, <%= Date.today.year %>
+</div>
 
 </body>
 </html>
