@@ -67,7 +67,7 @@ body
     padding: 0px 20px;
     padding-top: 5px;
     min-height: 50px;
-    background-color: #c1c1ff;
+    background: #c1c1ff url("/images/bg_header.png") repeat-x 0 0;
     border-bottom: 3px groove #c1c1ff;
 }
 
