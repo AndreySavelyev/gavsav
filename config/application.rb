@@ -31,13 +31,14 @@ module Gavsav
     # config.i18n.default_locale = :de
 
     # JavaScript files you want as :defaults (application.js is always included).
-    # config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
+    config.action_view.javascript_expansions[:defaults] = %w(jquery rails jquery.livequery)
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
-    config.secret_token = 'f608df5b33f156b88801e3e793742133cc1ddee15fc6684467c80d86153bae097d67b222cc2cdfcdb41112fc7e1258a7af29c96eade8ee84a4dec821685bb869'    
+    config.secret_token = 'f608df5b33f156b88801e3e793742133cc1ddee15fc6684467c80d86153bae097d67b222cc2cdfcdb41112fc7e1258a7af29c96eade8ee84a4dec821685bb869'
   end
 end
+

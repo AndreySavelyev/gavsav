@@ -1,2 +1,11 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+$(function()
+{
+    /* кнопки для сабмита с классом submit_button */
+    $('.submit_button').livequery('click',
+        function()
+        {
+            $(this).parents('form').submit();
+            return false;
+        });
+});
+
