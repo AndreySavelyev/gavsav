@@ -4,7 +4,6 @@
   <tr>
     <th>Title</th>
     <th>Body</th>
-    <th>Kind</th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,7 +13,6 @@
   <tr>
     <td><%= post.title %></td>
     <td><%= post.body %></td>
-    <td><%= post.kind %></td>
     <td><%= link_to 'Show', post %></td>
     <td><%= link_to 'Edit', edit_post_path(post) %></td>
     <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
@@ -23,5 +21,6 @@
 </table>
 
 <br />
-
-<%= link_to 'New Post', new_post_path %>
+<% if user_signed_in? %>
+	<%= link_to 'New Post', new_post_path %>
+<% end %>

@@ -78,7 +78,7 @@ body
 {
     background-color: #ececec;
     margin: 0px;
-    padding: 0px;
+    padding: 0px;	
 }
 
 .header
@@ -130,3 +130,7 @@ body
     clear: both;
 }
 
+.login
+{
+	float: right;
+}

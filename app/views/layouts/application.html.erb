@@ -10,7 +10,7 @@
 <body>
 
 <div class="header">
-  <div id="user_navigation">
+  <div id="user_navigation" class="login" >
 		<% if user_signed_in? %>
 			Signed in as <%= current_user.email %>
 			<%= link_to "Sugn out", destroy_user_session_path %>
@@ -20,18 +20,15 @@
 	</div>
 
   <ul class="site_navigation group">
-    <li><%= link_to t("site_navigation.needs"), needs_path, :class => "rc6" %></li>
   </ul>
 </div>
 
 <div class="main">
   <%= yield %>
 </div>
-
-<div class="footer">
-  ©GavSav Group, <%= Date.today.year %>
-</div>
-
+<footer class="footer">
+	&copy; GavSav Group, <%= Date.today.year %>	
+</footer>
 </body>
 </html>
 
